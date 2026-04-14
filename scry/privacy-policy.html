@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Scry</title>
+  <style>
+    body { font-family: sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+    h1 { font-size: 2em; margin-bottom: 0.2em; }
+    h2 { margin-top: 2em; }
+    table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+    th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+    th { background: #f5f5f5; }
+    code { background: #f5f5f5; padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
+    nav { margin-bottom: 2em; font-size: 0.9em; }
+    nav a { color: #555; }
+    footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; font-size: 0.9em; color: #555; }
+    footer a { color: #555; }
+  </style>
+</head>
+<body>
+
+  <nav><a href="../index.html">← App Policies</a></nav>
+
+  <h1>Privacy Policy</h1>
+  <p>Welcome to Scry for Android — an MTG Arena limited deck evaluator.</p>
+  <p>As a developer, I take privacy very seriously. I know how frustrating it is when apps collect your data without your knowledge.</p>
+
+  <h2>Data collected by the app</h2>
+  <p>I hereby state, to the best of my knowledge and belief, that I have not programmed this app to collect any personally identifiable information. All data created by you (the user) — including any deck lists you paste into the app — is stored locally on your device only and is never transmitted to any server I operate. No analytics software is present in the app.</p>
+
+  <h2>Third-party services</h2>
+
+  <h3>Scryfall</h3>
+  <p>On first launch (and whenever new card sets are released), the app downloads card data and card images from <a href="https://scryfall.com">Scryfall</a>, a third-party Magic: The Gathering card database. These requests are made directly from your device to Scryfall's servers. Please refer to <a href="https://scryfall.com/docs/privacy">Scryfall's Privacy Policy</a> for details on how they handle network requests.</p>
+
+  <h3>17lands</h3>
+  <p>Card ratings (win-rate data used to grade cards for draft) are fetched from <a href="https://www.17lands.com">17lands.com</a>. These requests are made directly from your device to 17lands' servers. Please refer to 17lands' privacy policy for details.</p>
+
+  <h2>Permissions</h2>
+  <table>
+    <tr><th>Permission</th><th>Why it is required</th></tr>
+    <tr><td><code>android.permission.INTERNET</code></td><td>Required to download card data, ratings, and card images from Scryfall and 17lands on first launch and when new sets are released.</td></tr>
+    <tr><td><code>android.permission.WAKE_LOCK</code></td><td>Keeps the screen on while the app is open, so it stays visible at the draft table without the display timing out.</td></tr>
+  </table>
+
+  <h2>Clipboard access</h2>
+  <p>The app can read your clipboard when you tap the "Paste" button on the deck import screen. Clipboard contents are only read in response to that explicit user action and are never stored or transmitted.</p>
+
+  <footer>
+    Questions or concerns? Contact <a href="mailto:yorkie.joey.joester@gmail.com">yorkie.joey.joester@gmail.com</a>.
+  </footer>
+
+</body>
+</html>
