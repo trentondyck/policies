@@ -1,0 +1,5 @@
+# https://policies.joeyapps.abrdns.com/
+User-agent: *
+Allow: /
+
+Sitemap: https://policies.joeyapps.abrdns.com/sitemap.xml
