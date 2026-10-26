@@ -24,16 +24,20 @@
   <nav><a href="index.html">← Puffers</a></nav>
 
   <h1>Privacy Policy</h1>
-  <p><em>Last updated: 22 June 2026</em></p>
-  <p>Puffers is a shared inhaler dose tracker for Android. It helps caregivers log a person's
+  <p><em>Last updated: 26 October 2026</em></p>
+  <p>Puffers is a shared inhaler dose tracker for Android and iPhone. It helps caregivers log a person's
      inhaler doses, count the puffs remaining, and coordinate so a dose is never missed or
      double-given. This policy explains what data the app handles and why.</p>
 
   <h2>Summary</h2>
   <ul>
-    <li>Puffers contains <strong>no advertising, no analytics, and no third-party trackers.</strong></li>
-    <li>The only outside service is <strong>"Sign in with Google,"</strong> which is optional — you
-        can use a username and password instead.</li>
+    <li>Puffers contains <strong>no advertising, no third-party analytics, and no third-party trackers.</strong></li>
+    <li>Sign-in is handled by <strong>Google</strong> ("Sign in with Google"), <strong>Apple</strong>
+        ("Sign in with Apple", iPhone) or <strong>Firebase Authentication</strong> (Google, for
+        email/password accounts) — we never see or store your password.</li>
+    <li>You can use Puffers <strong>as a guest</strong>, without an account. A guest's medications,
+        doses and photos stay on the phone; the only thing sent to us is the phone's device ID and a
+        few counts (below).</li>
     <li>Data you create (medications, doses, household members) is stored on your device and, when
         you sign in, on the app's own server so it can sync to the other phones in your household.</li>
     <li>Your household's data is visible only to members <strong>you</strong> approve. It is never sold.</li>
@@ -42,9 +46,12 @@
   <h2>Data the app collects</h2>
   <table>
     <tr><th>Data</th><th>Why</th><th>Stored where</th></tr>
-    <tr><td><strong>Account</strong> — a username and a one-way-hashed password, <em>or</em>, if you
-        choose Google sign-in, your Google account ID, name and email</td>
-        <td>To sign you in and identify you to your household across devices</td><td>App server</td></tr>
+    <tr><td><strong>Account</strong> — an email address and password (managed by Firebase
+        Authentication — we never see or store your password), <em>or</em> your Google account ID,
+        name and email if you choose Google sign-in, <em>or</em> your Apple ID's identifier and the
+        name and email (or private relay address) Apple shares if you choose Sign in with Apple</td>
+        <td>To sign you in and identify you to your household across devices</td>
+        <td>App server + the sign-in provider you chose</td></tr>
     <tr><td><strong>Household</strong> — the household name and the names + roles (caregiver/patient)
         of members you add</td>
         <td>To share the log and coordinate doses; a patient entry may contain a child's first name,
@@ -55,15 +62,25 @@
         <td>Device + app server</td></tr>
     <tr><td><strong>Reference photos</strong> — optional photos of an inhaler box or label that you attach</td>
         <td>So you can refer back to dosage instructions</td><td>Device + app server</td></tr>
+    <tr><td><strong>Device ID</strong> — the app-specific device ID (Android's device ID, or a random
+        ID kept on your iPhone), the platform and app version, and counts of your medications and
+        logged doses (never their names, doses or contents). Sent when you use Puffers as a guest,
+        and when you create an account</td>
+        <td>Analytics and fraud prevention: one free trial per phone, and how many people use guest
+        mode. Not shared with anyone</td><td>App server</td></tr>
   </table>
+  <p><strong>Guest mode.</strong> If you continue as a guest, your household, medications, dose log
+     and photos are stored only on your device (and in your phone's backup, if you have backup turned
+     on). Nothing but the device ID and counts above reaches our server. If you later create an
+     account, that data is uploaded to it so it can sync and be backed up like any account's.</p>
   <p>Medication and dose information is <strong>health-related personal data</strong>. It is
      collected only because you enter it, and used only to provide the tracking and sharing features
      of the app.</p>
 
   <h2>How data is stored and protected</h2>
   <ul>
-    <li>Data is held on your device and on the app's server (operated by the developer). Account
-        passwords are stored only as a one-way hash, never in plain text.</li>
+    <li>Data is held on your device and on the app's server (operated by the developer). Passwords
+        are handled by Firebase Authentication and never reach the app's server.</li>
     <li>All communication between the app and the server uses <strong>HTTPS/TLS</strong> encryption.</li>
     <li>Your household's data is accessible only to household members whom the household owner has
         explicitly approved.</li>
@@ -72,7 +89,8 @@
   <h2>Sharing</h2>
   <p>Puffers does <strong>not</strong> sell your data and does <strong>not</strong> share it for
      advertising. Data is shared only with the <strong>household members you invite and approve</strong>,
-     and with <strong>Google</strong>, solely to authenticate you, and only if you choose "Sign in with Google."</p>
+     and with <strong>Google</strong> or <strong>Apple</strong>, solely to authenticate you, through
+     whichever sign-in you choose.</p>
 
   <h2>Children</h2>
   <p>Puffers is intended for use by <strong>adults</strong> (parents and caregivers) to manage a
@@ -87,6 +105,9 @@
         <a href="delete-account.html">account &amp; data deletion page</a> (or email
         <a href="mailto:yorkie.joey.joester@gmail.com">yorkie.joey.joester@gmail.com</a>). Verified
         requests are actioned within 30 days.</li>
+    <li>The device ID record (the ID and the counts above, no medication data) is kept after an
+        account is deleted, so that a phone's free trial cannot be restarted by deleting and
+        re-creating an account.</li>
   </ul>
 
   <h2>Permissions</h2>
