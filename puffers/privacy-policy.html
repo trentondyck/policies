@@ -24,7 +24,7 @@
   <nav><a href="index.html">← Puffers</a></nav>
 
   <h1>Privacy Policy</h1>
-  <p><em>Last updated: 26 October 2026</em></p>
+  <p><em>Last updated: 29 October 2026</em></p>
   <p>Puffers is a shared inhaler dose tracker for Android and iPhone. It helps caregivers log a person's
      inhaler doses, count the puffs remaining, and coordinate so a dose is never missed or
      double-given. This policy explains what data the app handles and why.</p>
@@ -100,14 +100,18 @@
   <h2>Your choices and data deletion</h2>
   <ul>
     <li>You can remove medications, members and reference photos in the app at any time.</li>
+    <li>You can delete your account and all its server data in the app: <em>Settings → Delete this
+        household and my account</em>, or <em>Delete my data</em> on the screen shown when a free
+        trial ends. As a guest, <em>Delete my data</em> removes everything from the phone.</li>
     <li>Clearing the app's data or uninstalling removes the copy on your device.</li>
     <li>To delete your account and the data associated with it on the server, use the
         <a href="delete-account.html">account &amp; data deletion page</a> (or email
         <a href="mailto:yorkie.joey.joester@gmail.com">yorkie.joey.joester@gmail.com</a>). Verified
         requests are actioned within 30 days.</li>
-    <li>The device ID record (the ID and the counts above, no medication data) is kept after an
-        account is deleted, so that a phone's free trial cannot be restarted by deleting and
-        re-creating an account.</li>
+    <li>The device ID record (the ID, no medication data) and a one-way hash of the account's email
+        are kept after deletion, together with when the free trial started and whether the
+        one-time extra free month was used, so that neither can be restarted by deleting and
+        re-creating an account. The counts are cleared.</li>
   </ul>
 
   <h2>Permissions</h2>
