@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete your account — Tolerize</title>
+  <style>
+    body { font-family: sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+    h1 { font-size: 2em; margin-bottom: 0.2em; }
+    h2 { margin-top: 2em; }
+    table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+    th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; vertical-align: top; }
+    th { background: #f5f5f5; }
+    code { background: #f5f5f5; padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
+    nav { margin-bottom: 2em; font-size: 0.9em; }
+    nav a { color: #555; }
+    footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; font-size: 0.9em; color: #555; }
+    a { color: #2F6F5E; }
+    footer a { color: #555; }
+    .btn { display: inline-block; background: #2F6F5E; color: #fff; padding: 10px 18px; border-radius: 8px; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <nav><a href="index.html">← Tolerize</a></nav>
+
+  <h1>Delete your account &amp; data</h1>
+  <p>How to delete your Tolerize account and the data stored for it. This applies to the app
+     <strong>Tolerize</strong> (<code>com.joeyapps.tolerize</code>) on Android and iPhone.</p>
+
+  <h2>Option 1: in the app</h2>
+  <p>Open <em>Account → Delete my account</em> and confirm. It takes effect immediately.</p>
+  <ul>
+    <li>If you are the parent your clinic invited, this deletes the household: the dose log, batches,
+        doctor visits, reminder settings and everyone's sign-ins.</li>
+    <li>If someone added you to their household, it deletes only your own sign-in; the household keeps its plan.</li>
+  </ul>
+  <p>Uninstalling the app removes what is stored on your phone.</p>
+
+  <h2>Option 2: by email</h2>
+  <p>If you can't use the app, email us from the address you sign in with:</p>
+  <p><a class="btn" href="mailto:app@tolerize.ca?subject=Tolerize%20account%20deletion%20request&amp;body=Please%20delete%20my%20Tolerize%20account%20and%20its%20data.%20My%20sign-in%20email%20is%3A%20">Request account deletion</a></p>
+  <p>Or write to <a href="mailto:app@tolerize.ca">app@tolerize.ca</a> with the subject "Tolerize account
+     deletion request". We confirm the request comes from the account's email and delete it within 30 days.</p>
+
+  <h2>What is deleted, and when</h2>
+  <table>
+    <tr><th>Data</th><th>When</th></tr>
+    <tr><td>Your sign-in, household members, dose log, batches, visits, reminder settings and push tokens</td>
+        <td>Immediately from the live database; from encrypted backups within 14 days</td></tr>
+    <tr><td>Server logs (IP addresses)</td><td>Within 14 days</td></tr>
+  </table>
+  <p>Kept: a security-log entry recording that the account was deleted, with no health information. Your
+     clinic keeps its own medical records, which this does not affect.</p>
+
+  <footer>
+    Questions? Contact <a href="mailto:app@tolerize.ca">app@tolerize.ca</a>.
+    <br>Tolerize is made by <a href="https://home.joeyapps.abrdns.com/">Joey Android Apps</a>, Port Moody, BC, Canada.
+  </footer>
+
+</body>
+</html>

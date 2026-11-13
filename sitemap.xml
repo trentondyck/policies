@@ -100,4 +100,24 @@
     <lastmod>2026-09-16</lastmod>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://policies.joeyapps.abrdns.com/tolerize/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://policies.joeyapps.abrdns.com/tolerize/privacy-policy.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://policies.joeyapps.abrdns.com/tolerize/terms-of-service.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://policies.joeyapps.abrdns.com/tolerize/delete-account.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.5</priority>
+  </url>
 </urlset>
